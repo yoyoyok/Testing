@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+   
+
+  </head>
+  <body>
+
+    <div class="bar bar-header bar-light">
+      <h1 class="title"><font color="5929AB">Movement</font></h1>
+    
+        <div class="button-left">
+          <a class="button icon-left ion-chevron-left button-clear button-dark" ><font color="#5929AB">Choosing</font></a>
+        </div>
+    
+    </div>
+
+   
+    <div class="tabs-striped tabs-top tabs-icon-top tabs-background-positive tabs-color-light">
+      <div class="tabs">
+      
+        <a class="tab-item" href="index.html">
+          <i class="icon ion-home"></i>
+          Purchased Score
+        </a>
+      
+        <a class="tab-item" href="foodScore.html">
+          <i class="icon ion-star"></i>
+          Food Score
+        </a>
+      
+        <a class="tab-item" href="ShopScore.html">
+          <i class="icon ion-gear-a"></i>
+          Shop Score
+        </a>
+      
+        <a class="tab-item active" href="#">
+          <i class="icon ion-gear-a"></i>
+          Evaluation
+        </a>
+    
+      </div>
+    </div> 
+    <div class="list has-header">
+    <label class="item">
+   
+    <br>
+    <div ng-app="starter">
+
+      <ion-content ng-controller="ImageController">
+      <div class="item item-button-right">
+         <span class="label">Upload</span>
+        <button class="button button-energized" ng-click="addMedia()" style="height:20px;">
+          Add image
+        </button>
+
+        <br><br>
+          
+            <img ng-repeat="image in images" ng-src="{{(imges).jpeg}}" height="200px" style="border=2px; border-color: #000000;"/>
+          
+       
+      </ion-content>
+</div>
+    </div>
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Food Name</span>
+    <input type="text" placeholder="John">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Shop Name</span>
+    <input type="text" placeholder="Suhr">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label"></span>
+    <input type="text" placeholder="john@suhr.com">
+  </label>
+
+</div>
+    <!-- <div ng-app="starter">
+
+      <ion-content class="has-subheader padding" ng-controller="ImageController">
+   
+        <button class="button button-full button-energized" ng-click="addMedia()">
+          Add image
+        </button>
+        <br><br>
+          
+            <img ng-repeat="image in images" ng-src="{{urlForImage(images)}}" height="200px" style="border=2px; border-color: #000000;"/>
+          
+       
+      </ion-content>
+
+    </div> -->
+  </body>
+</html>
