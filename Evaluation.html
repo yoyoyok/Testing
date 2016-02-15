@@ -70,7 +70,7 @@
 
         <br><br>
           
-            <img ng-repeat="image in images" ng-src="{{(imges).jpeg}}" height="200px" style="border=2px; border-color: #000000;"/>
+            <img ng-repeat="image in images" ng-src="{{urlForImage(images)}}" height="200px" style="border=2px; border-color: #000000;"/>
           
        
       </ion-content>
@@ -91,7 +91,7 @@
   </label>
 
 </div>
-    <!-- <div ng-app="starter">
+   <!--  <div ng-app="starter">
 
       <ion-content class="has-subheader padding" ng-controller="ImageController">
    
